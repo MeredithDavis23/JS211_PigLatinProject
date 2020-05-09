@@ -11,11 +11,32 @@ const rl = readline.createInterface({
 });
 
 
-const pigLatin = (word) => {
+const vowel = ["a", "e", "i", "o", "u"]
+let pigLatin = ""
 
-  // Your code here
+const oldword = ""
 
+const translatePL = (oldword) =>{
+  let vowel = ["a", "e", "i", "o", "u"]
+  for(let i=0; i < vowel.length; i++){
+    if(oldword.charAt(0) == vowel[i]){
+   return oldword + "yay"
+  } else if(oldword.charAt(1) == vowel[i] && oldword.charAt(0) !== vowel[i]){
+    return oldword.slice(1) + oldword.charAt(0) + "ay"
+} else if (oldword.charAt(2) == vowel[i] && oldword.charAt(0) !== vowel[i]){
+    return oldword.slice(2) + oldword.charAt(0) + oldword.charAt(1) + "ay"
+} else if (oldword.charAt(3) == vowel[i] &&         oldword.charAt(0) !== vowel[i]){
+    return oldword.slice(3) + oldword.charAt(0) + oldword.charAt(1) + oldword.charAt(2) + "ay"
 }
+}
+}
+console.log(translatePL("bake"))
+console.log(translatePL("egg"))
+console.log(translatePL("stun"))
+console.log(translatePL("stray"))
+console.log(translatePL("alice"))
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
