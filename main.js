@@ -11,12 +11,12 @@ const rl = readline.createInterface({
 });
 
 
-const vowel = ["a", "e", "i", "o", "u"]
+// const vowel = ["a", "e", "i", "o", "u"]
 let pigLatin = ""
 
 const oldword = ""
 
-const translatePL = (oldword) =>{
+const translatePL = (oldword) => {
   let vowel = ["a", "e", "i", "o", "u"]
   for(let i=0; i < vowel.length; i++){
     if(oldword.charAt(0) == vowel[i]){
@@ -29,12 +29,8 @@ const translatePL = (oldword) =>{
     return oldword.slice(3) + oldword.charAt(0) + oldword.charAt(1) + oldword.charAt(2) + "ay"
 }
 }
-}
-console.log(translatePL("bake"))
-console.log(translatePL("egg"))
-console.log(translatePL("stun"))
-console.log(translatePL("stray"))
-console.log(translatePL("alice"))
+
+
 
 
 
