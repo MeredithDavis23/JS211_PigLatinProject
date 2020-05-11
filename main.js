@@ -29,7 +29,7 @@ const translatePL = (oldword) => {
     return oldword.slice(3) + oldword.charAt(0) + oldword.charAt(1) + oldword.charAt(2) + "ay"
 }
 }
-
+}
 
 
 
