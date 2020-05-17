@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <title></title>
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="piglatin.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <head>
+      <img id= "igpay" src="./igpay.png">
+      <h1>Pig Latin Translator</h1>
+    </head>
     <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <div id="display-element">
+        <h2>Enter your text here</h2>
+    <input type = "text" id="textInput" name="textInput" value = ""><br>
+    <button onclick="pigLatin()" id="button">Translate!</button>
+    <div id="showTranslation"></div>
+    </div>
     <hr/>
   </body>
 </html>

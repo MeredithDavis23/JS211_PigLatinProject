@@ -1,0 +1,40 @@
+body {
+    
+    /* margin-top: 50px; */
+    font-family: 'Cabin Sketch', cursive;
+    background-color: rgb(31, 190, 190);
+}
+
+h1 {
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+}
+
+hr {
+    width: 800px;
+    color: aqua 2px solid bold;
+}
+div {
+    padding-top: 50px;
+    text-align: center;
+}
+#igpay {
+  display:  block;
+  position: absolute;
+  justify-content: right;
+  height: 150px;
+  margin-top: auto;
+  padding-left: 200px;
+}
+
+#showTranslation {
+    font-size: 20px;
+    color: black;
+    font-style: bold;
+    height: 150px;
+}
