@@ -38,3 +38,12 @@ div {
     font-style: bold;
     height: 150px;
 }
+
+.btn {
+    background-color: lightgray;
+    height: 30px;
+    width: 80px;
+    color: darkred;
+    font-size: 14px;
+    font-weight: bold;
+}
